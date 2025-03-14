@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="diagramaterreno"/>
+        <attribute name="authors" value="arisita"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-14 11:35:31 a. m."/>
+        <attribute name="created" value="YXJpc2l0YTtBUkk7MjAyNS0wMy0xNDsxMToxMjo1OCBhLiBtLjsyNDIx"/>
+        <attribute name="edited" value="YXJpc2l0YTtBUkk7MjAyNS0wMy0xNDsxMTozNTozMSBhLiBtLjsxOzI1MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iva, mcu" type="Real" array="False" size=""/>
+            <declare name="ar, br, b, atr, precio" type="Real" array="False" size=""/>
+            <declare name="L" type="Integer" array="False" size=""/>
+            <assign variable="L" expression="12"/>
+            <assign variable="iva" expression="16.0"/>
+            <assign variable="mcu" expression="9256.00"/>
+            <assign variable="ar" expression="L*1.0/2.0*L"/>
+            <assign variable="br" expression="L*L-1.0/2.0*L*L"/>
+            <assign variable="b" expression="10.39"/>
+            <assign variable="atr" expression="1.0/2.0*L*L/2"/>
+            <assign variable="precio" expression="ar+br+atr*mcu*iva"/>
+        </body>
+    </function>
+</flowgorithm>
