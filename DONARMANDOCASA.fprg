@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DONARMANDOCASA"/>
+        <attribute name="authors" value="arisita"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-14 12:38:34 p. m."/>
+        <attribute name="created" value="YXJpc2l0YTtBUkk7MjAyNS0wMy0xNDsxMTo1ODo0NCBhLiBtLjsyNDI2"/>
+        <attribute name="edited" value="YXJpc2l0YTtBUkk7MjAyNS0wMy0xNDsxMjozODozNCBwLiBtLjsxOzI1NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="L" type="Integer" array="False" size=""/>
+            <declare name="M2, IVA, ISAI, at, at2, ar, ATO, Precio, totalIVA, totalISAI, TOTAL" type="Real" array="False" size=""/>
+            <input variable="L"/>
+            <assign variable="M2" expression="11793.00"/>
+            <assign variable="IVA" expression="0.16"/>
+            <assign variable="ISAI" expression="0.43"/>
+            <assign variable="at" expression="L*(1.0/4.0*L)/2"/>
+            <assign variable="at2" expression="(1.0/4.0*L)*(1.0/2.0*L)/2"/>
+            <assign variable="ar" expression="L*(1.0/2.0*L)"/>
+            <assign variable="ATO" expression="at+at2+ar*2"/>
+            <assign variable="Precio" expression="ATO*M2"/>
+            <assign variable="totalISAI" expression="Precio*ISAI"/>
+            <assign variable="totalIVA" expression="Precio*IVA"/>
+            <assign variable="TOTAL" expression="Precio+totalISAI+totalIVA"/>
+            <output expression="TOTAL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
