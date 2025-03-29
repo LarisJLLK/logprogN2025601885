@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="edades"/>
+        <attribute name="authors" value="arisita"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 12:41:06 p. m."/>
+        <attribute name="created" value="YXJpc2l0YTtBUkk7MjAyNS0wMy0yNjsxMjoxODo1MSBwLiBtLjsyNDM5"/>
+        <attribute name="edited" value="YXJpc2l0YTtBUkk7MjAyNS0wMy0yNjsxMjo0MTowNiBwLiBtLjsxOzI1NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;introduzca su edad&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad&gt;=60">
+                <then>
+                    <output expression="&quot;hola cadaver&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad &gt;=27">
+                        <then>
+                            <output expression="&quot;hola se&#241;or&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edad &gt;=19">
+                                <then>
+                                    <output expression="&quot;que onda&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="edad &gt;=12">
+                                        <then>
+                                            <output expression="&quot;holi&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="edad&gt;=0">
+                                                <then>
+                                                    <output expression="&quot;hola nena&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;invalido&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

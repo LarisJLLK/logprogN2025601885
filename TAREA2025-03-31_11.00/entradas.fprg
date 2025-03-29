@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TREA MODIFICAR"/>
+        <attribute name="authors" value="meli_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-28 11:54:02 p. m."/>
+        <attribute name="created" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjY7MTE6NTU6NTkgcC4gbS47MzExNA=="/>
+        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjg7MTI6MjU6MzUgcC4gbS47MjszMjE3"/>
+        <attribute name="edited" value="YXJpc2l0YTtBUkk7MjAyNS0wMy0yODsxMTo1NDowMiBwLiBtLjsxOzI1NDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edadclien" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;cual es tu edad?&quot;" newline="True"/>
+            <input variable="edadclien"/>
+            <if expression="edadclien&lt;4">
+                <then>
+                    <output expression="&quot;ENTRA GRATIS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edadclien&gt;=4 AND edadclien&lt;=18">
+                        <then>
+                            <output expression="&quot;PAGA 200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edadclien&gt;=18">
+                                <then>
+                                    <output expression="&quot;PAGA 500&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
