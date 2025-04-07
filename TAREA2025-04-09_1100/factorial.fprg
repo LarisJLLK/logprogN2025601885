@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="arisita"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 07:06:13 p. m."/>
+        <attribute name="created" value="YXJpc2l0YTtBUkk7MjAyNS0wNC0wNDswNTozODowMyBwLiBtLjsyNDM3"/>
+        <attribute name="edited" value="YXJpc2l0YTtBUkk7MjAyNS0wNC0wNDswNzowNjoxMyBwLiBtLjsxOzI1NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, x" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <output expression="&quot;&#191;que numero quiere factorizar?&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n &gt; 1">
+                <assign variable="x" expression="x*n"/>
+                <assign variable="n" expression="n-1"/>
+            </while>
+            <output expression="&quot;el factorial es:&quot;" newline="False"/>
+            <output expression="x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

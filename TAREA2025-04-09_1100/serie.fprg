@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="serie"/>
+        <attribute name="authors" value="arisita"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 12:03:24 a. m."/>
+        <attribute name="created" value="YXJpc2l0YTtBUkk7MjAyNS0wNC0wNjsxMTo0OTozMyBwLiBtLjsyNDQx"/>
+        <attribute name="edited" value="YXJpc2l0YTtBUkk7MjAyNS0wNC0wNjsxMTo1MzozOSBwLiBtLjsxO2FyaXNpdGE7QVJJOzIwMjUtMDQtMDY7MTA6NTI6NTUgcC4gbS47c2VyaWUuZnByZzs2MTE5"/>
+        <attribute name="edited" value="YXJpc2l0YTtBUkk7MjAyNS0wNC0wNzsxMjowMzoyNCBhLiBtLjsxOzI1MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, a, b, x" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="2"/>
+            <assign variable="i" expression="3"/>
+            <assign variable="x" expression="0"/>
+            <while expression="i &lt;= 64">
+                <assign variable="x" expression="a+b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="x"/>
+                <assign variable="i" expression="i+1"/>
+                <output expression="x" newline="False"/>
+                <output expression="&quot;, &quot;" newline="False"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
